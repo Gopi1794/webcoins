@@ -1,13 +1,15 @@
-name: Automatic Hosting FireBase
+name: Deploy to Live Firebase
 
 on:
-  pull_request:
+  push:
+    branches:
+      - main
     # Optionally configure to run only for specific files. For example:
     # paths:
     # - "website/**"
 
 jobs:
-  build_and_preview:
+  deploy_live_website:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -17,5 +19,5 @@ jobs:
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT }}"
-          expires: 30d
           projectId: your-Firebase-project-ID
+          channelId: live
