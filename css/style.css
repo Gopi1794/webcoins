@@ -55,6 +55,7 @@
 }
 
 .logo a img {
+    width: 4.7rem;
     height: 70px;
 
 }
@@ -219,6 +220,7 @@ main {
 
 .statua {
     width: 483px;
+    height: auto;
     z-index: 1000;
 }
 
@@ -249,6 +251,10 @@ main {
 
 /*perfiles*/
 
+.perfils img{
+    width: 20rem;
+    height: auto;
+}
 .perfils {
     display: flex;
     align-items: center;
@@ -259,8 +265,9 @@ main {
 
 }
 
-.perfils img {
+.perfils .mockup {
     width: 30vh;
+    height: auto;
 }
 
 .perfils .round-log {
