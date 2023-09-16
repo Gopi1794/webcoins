@@ -13,7 +13,7 @@ toggleBtn.onclick = function () {
 
 /*SVG*/
 
-const countstart = 100
+const countstart = 70
 
 const svg = document.getElementById('svg-body');
 svg.innerHTML = [...Array(countstart).keys()].map(i =>`

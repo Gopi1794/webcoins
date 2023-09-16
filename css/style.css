@@ -32,7 +32,7 @@
 .star {
     transform: rotate(0deg);
     transform-origin: 100VH 100vh;
-    animation: star-animation calc(var(--f, 1) * var(--V, 2) * 20s) linear forwards infinite;
+    animation: star-animation calc(var(--f, 1) * var(--V, 2) * 50s) linear forwards infinite;
 }
 
 @keyframes star-animation {
@@ -452,6 +452,42 @@ main {
 .swiper-pagination{
     --swiper-pagination-color: var(--color-1);
 }
+
+
+/*MOCKUP2*/
+
+
+.appstore{
+    display: flex;
+    background: linear-gradient(to bottom, #3e074a, #882f8b);
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 3rem;
+    padding-bottom: auto;
+}
+
+.appstore img{
+    width: 100px;
+    justify-items: end;
+}
+
+.appstore-text{
+    justify-content: center;
+    align-items: center;
+    padding-left: 70px;
+    padding-top: 100px;
+}
+.mockup2 {
+    z-index: 1000;    
+}
+
+.mockup2 img{
+    width:400px;
+    height: auto;
+}
+
+
 /*RESPONSIVE*/
 
 @media (max-width: 1588px) {
