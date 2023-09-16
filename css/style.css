@@ -253,7 +253,7 @@ main {
 
 .perfils img{
     width: 20rem;
-    height: auto;
+    height: fit-content;
 }
 .perfils {
     display: flex;
@@ -267,7 +267,7 @@ main {
 
 .perfils .mockup {
     width: 30vh;
-    height: auto;
+    height: fit-content;
 }
 
 .perfils .round-log {
