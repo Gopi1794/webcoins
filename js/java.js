@@ -1,3 +1,5 @@
+/*MENU*/
+
 const toggleBtn = document.querySelector('.toggle_btn')
 const toggleBtnIcon = document.querySelector('.toggle_btn i')
 const dropDownMenu = document.querySelector('.dropdown_menu')
@@ -14,9 +16,10 @@ toggleBtn.onclick = function () {
 /*SVG*/
 
 const countstart = 70
-
 const svg = document.getElementById('svg-body');
-svg.innerHTML = [...Array(countstart).keys()].map(i =>`
+
+
+svg.innerHTML = [...Array(countstart).keys()].map(i => `
 <circle 
 class="star"
 cx="${Math.random() * window.innerWidth}" 
@@ -26,8 +29,10 @@ stroke="white" stroke-width="3" fill="white"
 style="--V:${1 + Math.random() * 1}"
 />`).join('');
 
-window.addEventListener('scroll' , function(e){
+window.addEventListener('scroll', function (e) {
     document.documentElement.style.setProperty(
-    '--f' , 1 - (window.scrollY / document.documentElement.scrollHeight)
+        '--f', 1 - (window.scrollY / document.documentElement.scrollHeight)
     )
 })
+
+
