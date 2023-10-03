@@ -34,7 +34,7 @@
                     <input type="password" placeholder="Contraseña">
                     <button>Entrar</button>
                 </form>
-                <form action="" class="form__registrer">
+                <form action="php/registro_usuarios_be.php" method="POST" class="form__registrer">
                     <h2>Registrarse</h2>
                     <input type="text" placeholder="Nombre Completo" name="nombre_completo">
                     <input type="text" placeholder="Correo Electronico" name="email">
