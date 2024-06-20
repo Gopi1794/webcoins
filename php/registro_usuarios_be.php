@@ -23,7 +23,7 @@ if (mysqli_num_rows($verificar_correo) > 0) {
     exit();
 }
 
-$verificar_user = mysqli_query ($conexion , "SELECT * FROM user WHERE email = '$user'");
+$verificar_user = mysqli_query ($conexion , "SELECT * FROM user WHERE user = '$user'");
 
 if (mysqli_num_rows($verificar_user) > 0) {
     echo '
